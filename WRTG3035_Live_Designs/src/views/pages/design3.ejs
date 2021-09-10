@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href="../Resources/CSS/WRTG3035_style.css" rel="stylesheet">
+        <link rel="stylesheet" href="../Resources/Font/webfontkit-20210905-191501/stylesheet.css" type="text/css" charset="utf-8"/>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4"></script>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="   crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </head>
+    <body class="background">
+        <ul style="height: 40px;">
+            <li><img src="../Resources/IMG/bustoshow text logo -white outline no fill.png" style="width: 180px; margin-top: 10px; margin-left: 20px;"></li>
+            <li style="float: right;"><a href="/design3">Design 3</a></li>
+            <li style="float: right;"><a href="/design2">Design 2</a></li>
+            <li style="float: right;"><a href="/">Design 1</a></li>
+        </ul>
+
+        <div style="width: 90%; margin-top: 40px; margin-left: 5%;">
+            <div class="w3-row" style="margin-bottom: 10px;">
+                <div style="width: 60%;"> 
+                    <div class="bubble bubble-bottom-left">
+                        <p style="margin: auto; font-family: airstrip_fourregular; font-size: 50px;">
+                            Bus to Show
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-left: 40%; margin-bottom: 100px;"> 
+                <div class="bubble bubble-bottom-left" style="transform:scaleX(-1);">
+                    <p style="transform:scaleX(-1); margin: auto; font-family: airstrip_fourregular; font-size: 40px;">
+                        About Us
+                    </p>
+                </div>
+            </div>
+            <div class="w3-row">
+                <div style="width: 45%;"> 
+                    <div class="bubble2 bubble-bottom-left2 design3Text">
+                        <p style="margin: auto; font-family: airstrip_fourregular; font-size: 30px;">
+                            Mission
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-left: 55%; margin-bottom: 75px;"> 
+                <div class="bubble2 bubble-bottom-left2" style="transform:scaleX(-1);">
+                    <p style="transform:scaleX(-1); margin: auto; font-family: airstrip_fourregular;">
+                        To reduce event-based impaired driving & fuel consumption, while building community among event-goers and promoting
+                        local artists.
+                    </p>
+                </div>
+            </div>
+            <div class="w3-row">
+                <div style="width: 45%;"> 
+                    <div class="bubble2 bubble-bottom-left2 design3Text">
+                        <p style="margin: auto; font-family: airstrip_fourregular; font-size: 30px;">
+                            Philosophy
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-left: 55%; margin-bottom: 75px;"> 
+                <div class="bubble2 bubble-bottom-left2" style="transform:scaleX(-1);">
+                    <p style="transform:scaleX(-1); margin: auto; font-family: airstrip_fourregular;">
+                        By making bus travel more fun and accessible than any other mode of transportation, we are building a culture
+                        of responsible and sustainable event participation.
+                    </p>
+                </div>
+            </div>
+            <div class="w3-row">
+                <div style="width: 45%;"> 
+                    <div class="bubble2 bubble-bottom-left2">
+                        <p style="margin: auto; font-family: airstrip_fourregular; font-size: 30px;">
+                            Cool Statistics
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-left: 55%;"> 
+                <div class="bubble2 bubble-bottom-left2" style="transform:scaleX(-1);">
+                    <canvas id="myChart1" style="width:100%; height: 120px; transform:scaleX(-1);"></canvas>
+                    <p style="transform:scaleX(-1); margin: auto; font-family: airstrip_fourregular;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Diam ut venenatis tellus in metus vulputate eu scelerisque felis.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var xyValues = [
+            {x:50, y:7},
+            {x:60, y:8},
+            {x:70, y:8},
+            {x:80, y:9},
+            {x:90, y:9},
+            {x:100, y:9},
+            {x:110, y:10},
+            {x:120, y:11},
+            {x:130, y:14},
+            {x:140, y:14},
+            {x:150, y:15}
+            ];
+
+            new Chart("myChart1", {
+                type: "scatter",
+                data: {
+                    datasets: [{
+                        pointRadius: 4,
+                        pointBackgroundColor: "rgb(0,0,0)",
+                        data: xyValues
+                    }]
+                },
+                options: { 
+                    legend: {display: false},
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                fontColor: "black",
+                                fontSize: 14,
+                                stepSize: 2,
+                                beginAtZero: false
+                            }
+                        }],
+                        xAxes: [{
+                            ticks: {
+                                fontColor: "black",
+                                fontSize: 14,
+                                stepSize: 20,
+                                beginAtZero: false
+                            }
+                        }]
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>

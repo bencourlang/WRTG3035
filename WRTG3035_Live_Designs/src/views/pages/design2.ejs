@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href="../Resources/CSS/WRTG3035_style.css" rel="stylesheet">
+        <link rel="stylesheet" href="../Resources/Font/webfontkit-20210905-191501/stylesheet.css" type="text/css" charset="utf-8"/>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="   crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </head>
+    <body style="background-color: white;">
+        <ul style="height: 40px;">
+            <li><img src="../Resources/IMG/bustoshow text logo -white outline no fill.png" style="width: 180px; margin-top: 10px; margin-left: 20px;"></li>
+            <li style="float: right;"><a href="/design3">Design 3</a></li>
+            <li style="float: right;"><a href="/design2">Design 2</a></li>
+            <li style="float: right;"><a href="/">Design 1</a></li>
+        </ul>
+
+        <div class="w3-row w3-container" style="margin-top: 60px; margin-bottom: 40px;">
+            <div class="w3-col s6" style="margin-left: 75px;">
+                <div class="whitetext" style="margin: 20px; color: #ff420f; height: 800px;">
+                    <h1 style="font-family: airstrip_fourregular; font-size: 60px; margin-bottom: 20px;">Bus To Show</h1>
+                    <h2 style="font-family: airstrip_fourregular; font-size: 25px; margin-bottom: 15px;">Descriptive text about the company</h2>
+                    <p style="font-family: airstrip_fourregular; font-size: 18px;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                        aliqua. Vel turpis nunc eget lorem dolor sed viverra ipsum. Aliquet enim tortor at auctor urna nunc id. Vestibulum sed 
+                        arcu non odio euismod lacinia at. Cras tincidunt lobortis feugiat vivamus at augue. Id nibh tortor id aliquet lectus 
+                        proin nibh nisl condimentum. In aliquam sem fringilla ut morbi tincidunt. Semper quis lectus nulla at volutpat. 
+                        Sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Bibendum ut tristique et egestas quis ipsum suspendisse. 
+                        Id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique. Tincidunt nunc pulvinar sapien et ligula 
+                        ullamcorper malesuada proin libero. Feugiat scelerisque varius morbi enim nunc faucibus a. Risus commodo viverra maecenas 
+                        accumsan lacus vel. Ultrices mi tempus imperdiet nulla malesuada pellentesque. Vitae turpis massa sed elementum tempus 
+                        egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada. Praesent elementum facilisis leo vel fringilla.
+                    </p>
+                </div>
+            </div>
+            <div class="w3-col s4" style="height: 700px; background-color: #ff420f; border-radius: 12px; margin-left: 50px; color: white;">
+                <div style="margin-left: 30px; margin-top: 20px;">
+                    <h1 style="font-size: 60px; margin-bottom: 20px; font-family: airstrip_fourregular;">Statistics</h1>
+                    <div style="margin-right: 20px;">
+                        <h1 style="font-size: 25px; font-family: airstrip_fourregular; margin-top: 20px; color: white;">Stat 1</h1>
+                        <hr style="background-color: white; width: 95%; height: 2px;">
+                        <canvas id="myChart1" style="width:100%; height: 120px;"></canvas>
+                        <p style="font-size: 12px; font-family: airstrip_fourregular; margin-top: 15px; margin-left: 10px; color: white; text-align: left;">Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam ut venenatis tellus 
+                            in metus vulputate eu scelerisque felis.</p>
+                        <h1 style="font-size: 25px; font-family: airstrip_fourregular; margin-top: 40px; color: white;">Stat 2</h1>
+                        <hr style="background-color: white; width: 95%; height: 2px;">
+                        <canvas id="myChart2" style="width:100%; height: 120px;"></canvas>
+                        <p style="font-size: 12px; font-family: airstrip_fourregular; margin-top: 15px; margin-left: 10px; color: white; text-align: left;">Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam ut venenatis tellus 
+                            in metus vulputate eu scelerisque felis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var xyValues = [
+            {x:50, y:7},
+            {x:60, y:8},
+            {x:70, y:8},
+            {x:80, y:9},
+            {x:90, y:9},
+            {x:100, y:9},
+            {x:110, y:10},
+            {x:120, y:11},
+            {x:130, y:14},
+            {x:140, y:14},
+            {x:150, y:15}
+            ];
+
+            new Chart("myChart1", {
+                type: "scatter",
+                data: {
+                    datasets: [{
+                        pointRadius: 4,
+                        pointBackgroundColor: "rgb(0,0,0)",
+                        data: xyValues
+                    }]
+                },
+                options: { 
+                    legend: {display: false},
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                fontColor: "white",
+                                fontSize: 14,
+                                stepSize: 2,
+                                beginAtZero: false
+                            }
+                        }],
+                        xAxes: [{
+                            ticks: {
+                                fontColor: "white",
+                                fontSize: 14,
+                                stepSize: 20,
+                                beginAtZero: false
+                            }
+                        }]
+                    }
+                }
+            });
+        </script>
+
+        <script>
+            var xyValues = [
+            {x:50, y:7},
+            {x:60, y:8},
+            {x:70, y:8},
+            {x:80, y:9},
+            {x:90, y:9},
+            {x:100, y:9},
+            {x:110, y:10},
+            {x:120, y:11},
+            {x:130, y:14},
+            {x:140, y:14},
+            {x:150, y:15}
+            ];
+
+            new Chart("myChart2", {
+                type: "scatter",
+                data: {
+                    datasets: [{
+                        pointRadius: 4,
+                        pointBackgroundColor: "rgb(0,0,0)",
+                        data: xyValues
+                    }]
+                },
+                options: { 
+                    legend: {display: false},
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                fontColor: "white",
+                                fontSize: 14,
+                                stepSize: 2,
+                                beginAtZero: false
+                            }
+                        }],
+                        xAxes: [{
+                            ticks: {
+                                fontColor: "white",
+                                fontSize: 14,
+                                stepSize: 20,
+                                beginAtZero: false
+                            }
+                        }]
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>
